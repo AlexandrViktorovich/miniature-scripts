@@ -1,17 +1,14 @@
 from tkinter import *
-import pyglet, os
 import pyautogui
 import keyboard
-
-pyglet.font.add_file('Helvetica-Rounded-LT-Black.ttf')
 
 window = Tk()
 
 window.resizable(width = False, height = False)
 window.geometry("250x180")
 
-window.title("test window")
-window.iconbitmap("pic.png")
+window.title("Clicker_v1.2")
+window.iconbitmap("pic.ico")
 
 def get_data( event ):
     start = start_btn_inp.get()
@@ -25,31 +22,31 @@ def get_data( event ):
 
 
 start_btn_txt = Label(text = 'Start button',
-                  font = 'Helvetica-Rounded-LT-Black 21 bold',
+                  font = 'Arial 21 bold',
                   #fg = 'black',
                   #bg = 'white',
                   )
 
-start_btn_inp = Entry(window, font = 'Helvetica-Rounded-LT-Black 14 bold',
+start_btn_inp = Entry(window, font = 'Arial 14 bold',
                       fg = 'black',
                       bg = 'white',
                       relief = 'solid',
                       justify = 'center' )
 
 stop_btn_txt = Label(text = 'Stop button',
-                  font = 'Helvetica-Rounded-LT-Black 21 bold',
+                  font = 'Arial 21 bold',
                   #fg = 'black',
                   #bg = 'white',
                   )
 
-stop_btn_inp = Entry(window, font = 'Helvetica-Rounded-LT-Black 14 bold',
+stop_btn_inp = Entry(window, font = 'Arial 14 bold',
                       fg = 'black',
                       bg = 'white',
                       relief = 'solid',
                       justify = 'center' )
 
 run = Button(text = 'Run!',
-             font = 'Helvetica-Rounded-LT-Black 14 bold',
+             font = 'Arial 14 bold',
              width =18)
 
 start_btn_txt.pack()
